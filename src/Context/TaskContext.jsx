@@ -6,7 +6,7 @@ import { AuthContext } from "./AuthProvider";
 export const TaskContext = createContext();
 
 const axiosInstance = axios.create({
-  baseURL: import.meta.env.VITE_API_URL || "https://task-mate-server-gold.vercel.app",
+  baseURL: import.meta.env.VITE_API_URL || "https://job-task-server-swart.vercel.app",
   withCredentials: true,
 });
 

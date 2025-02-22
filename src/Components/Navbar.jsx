@@ -22,7 +22,7 @@ const Navbar = () => {
     try {
       await signOutUser();
       window.location.href = "/login";
-      toast.success("Logout Successful");
+      toast.success("Logout Successful"); 
     } catch (error) {
       console.log(error);
     }

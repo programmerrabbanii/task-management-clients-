@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const axiosSecure = axios.create({
-  baseURL: 'https://task-mate-server-gold.vercel.app',
+  baseURL: 'https://job-task-server-swart.vercel.app',
   withCredentials: true // This ensures cookies are sent with every request
 });
 

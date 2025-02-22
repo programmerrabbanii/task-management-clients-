@@ -167,7 +167,7 @@ const TaskBoard = () => {
         }}
         initialData={editingTask} // Pass the task being edited
       />
-    </>
+    </> 
   );
 };
 

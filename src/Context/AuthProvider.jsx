@@ -46,7 +46,7 @@ const AuthProvider = ({ children }) => {
       if (currentUser?.email) {
         setUser(currentUser);
         await axios.post(
-          `https://task-mate-server-gold.vercel.app/jwt`,
+          `https://job-task-server-swart.vercel.app/jwt`,
           {
             email: currentUser?.email,
           },
@@ -54,7 +54,7 @@ const AuthProvider = ({ children }) => {
         );
       } else {
         setUser(currentUser);
-        await axios.get(`https://task-mate-server-gold.vercel.app/logout`, {
+        await axios.get(`https://job-task-server-swart.vercel.app/logout`, {
           withCredentials: true,
         });
       }

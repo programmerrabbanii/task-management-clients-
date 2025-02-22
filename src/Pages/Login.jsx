@@ -17,18 +17,18 @@ const Login = () => {
                 navigate(from, { replace: true });
             }
             const userInfo = {
-                name: res.user?.displayName,
+                name: res.user?.displayName, 
                 email: res.user?.email,
                 photoURL: res.user?.photoURL,
             };
-            axios.post("http://localhost:5173/users", userInfo).then(() => {
+            axios.post("https://job-task-server-swart.vercel.app/users", userInfo).then(() => {
                 navigate(from, { replace: true });
             });
         }).catch(error => {
             toast.error("Sign-in failed. Please try again.");
             console.error(error);
         }); 
-    };
+    };   
  
     return (
         <div className="min-h-screen flex items-center justify-center bg-gradient-to-r from-indigo-500 to-purple-600 p-6">

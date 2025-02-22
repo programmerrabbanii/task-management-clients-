@@ -2,8 +2,8 @@
 JObTask is a modern task management application built with React and Vite. It features a drag-and-drop interface, real-time updates, and a clean, intuitive design for managing your daily tasks efficiently.
 
 ## 🔗 Live Links
-- **Frontend:** [https://job-task-13f1d.web.app/login](#)
-- **Backend:** [https://job-task-server-swart.vercel.app](#)
+- **Frontend:** [https://task-management-applicat-8153c.web.app](#)
+- **Backend:** [https://job-task-server-swart.vercel.app/](#)
 
 ## ✨ Features
 - Drag-and-drop task management

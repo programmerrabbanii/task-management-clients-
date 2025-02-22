@@ -21,15 +21,15 @@ const Login = () => {
                 email: res.user?.email,
                 photoURL: res.user?.photoURL,
             };
-            axios.post("https://task-mate-server-gold.vercel.app/users", userInfo).then(() => {
+            axios.post("http://localhost:5173/users", userInfo).then(() => {
                 navigate(from, { replace: true });
             });
         }).catch(error => {
             toast.error("Sign-in failed. Please try again.");
             console.error(error);
-        });
+        }); 
     };
-
+ 
     return (
         <div className="min-h-screen flex items-center justify-center bg-gradient-to-r from-indigo-500 to-purple-600 p-6">
             <div className="max-w-md w-full space-y-8 p-8 bg-white rounded-2xl shadow-2xl">
